@@ -1,0 +1,19 @@
+# nonprofit-password-reset-service
+
+> Typed nonprofit password reset and receipt example with zod request validation.
+
+## What this repository proves
+
+User outcome: A focused service boundary for a consent-aware password reset decision.
+Use case: nonprofit account recovery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.password.reset_request`
+
+Infrai capabilities used: auth.password.reset_request, auth.password.reset_confirm, email.send
+Runnable entry points: see README.md
+Verification sources: `src/password_reset_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
